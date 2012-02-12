@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <link type="text/css" rel="stylesheet" href="http://tjs.sjs.sinajs.cn/t3/style/css/common/card.css" />
+  <title>ZhuoApps</title>
+</head>
+
+<body>
+<p>网站正在建设中...</p>
+<p>如果有任何疑问或者好的建议，可以在新浪微博 <font id=”content”>@吴卓Mickey</font> 留言，感谢您的支持，我会做得更好。</p>
+</body>
+
+<script type="text/javascript" src="http://tjs.sjs.sinajs.cn/t3/platform/js/api/wb.js"></script>
+<script type="text/javascript">
+WB.core.load(['connect', 'client', 'widget.base', 'widget.atWhere'], function() {
+	var cfg = {
+		key: '720033393',
+		xdpath: 'http://127.0.0.1:4000/weibo/xd.html'
+	};
+	WB.connect.init(cfg);
+	WB.client.init(cfg);
+	
+	//user card widget
+	WB.widget.atWhere.searchAndAt(document.getElementById("content"));
+});
+</script>
+
+</html>
